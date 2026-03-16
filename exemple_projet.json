@@ -1,0 +1,64 @@
+{
+    "version": "1.0",
+    "geometrie": {
+        "type_section": "Rectangulaire",
+        "b_eff": 0.0,
+        "b_w": 350.0,
+        "h_f": 0.0,
+        "h": 600.0,
+        "d": 540.0,
+        "d_prime": 50.0,
+        "c_nom": 30.0,
+        "diam_etrier": 8.0,
+        "espacement_vertical": 25.0,
+        "espacement_horizontal": 25.0,
+        "d_g": 20.0,
+        "nb_max_lits": 4,
+        "longueur_extrusion": 1000.0,
+        "d_auto": false
+    },
+    "materiaux": {
+        "beton": {
+            "fck": 25.0,
+            "alpha_cc": 1.0,
+            "gamma_c": 1.5,
+            "eta": 1.0,
+            "lambda_coeff": 0.8
+        },
+        "acier": {
+            "fyk": 500.0,
+            "Es": 200000.0,
+            "gamma_s": 1.15,
+            "classe_ductilite": "B",
+            "diagramme": "Palier horizontal"
+        }
+    },
+    "sollicitations": {
+        "M_Ed": 341400000.0,
+        "M_ser": 237600000.0,
+        "moment_positif": true
+    },
+    "ferraillage": {
+        "lits_tendus": [
+            {
+                "numero": 1,
+                "nombre_barres": 6,
+                "diametre_mm": 16.0,
+                "est_comprime": false
+            },
+            {
+                "numero": 2,
+                "nombre_barres": 3,
+                "diametre_mm": 14.0,
+                "est_comprime": false
+            }
+        ],
+        "lits_comprimes": []
+    },
+    "environnement": {
+        "classe_exposition": "XC1",
+        "maitrise_fissuration": true,
+        "wmax_impose": null,
+        "calcul_direct_fissuration": false
+    }
+}
