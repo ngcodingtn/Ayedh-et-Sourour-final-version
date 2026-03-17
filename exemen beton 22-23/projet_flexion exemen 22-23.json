@@ -1,0 +1,96 @@
+{
+    "version": "1.0",
+    "geometrie": {
+        "type_section": "T",
+        "b_eff": 1200.0,
+        "b_w": 500.0,
+        "h_f": 120.0,
+        "h": 600.0,
+        "d": 510.0,
+        "d_prime": 40.0,
+        "c_nom": 30.0,
+        "diam_etrier": 25.0,
+        "espacement_vertical": 25.0,
+        "espacement_horizontal": 25.0,
+        "d_g": 20.0,
+        "nb_max_lits": 4,
+        "longueur_extrusion": 1000.0,
+        "d_auto": false
+    },
+    "materiaux": {
+        "beton": {
+            "fck": 25.0,
+            "alpha_cc": 1.0,
+            "gamma_c": 1.5,
+            "eta": 1.0,
+            "lambda_coeff": 0.8
+        },
+        "acier": {
+            "fyk": 500.0,
+            "Es": 200000.0,
+            "gamma_s": 1.15,
+            "classe_ductilite": "A",
+            "diagramme": "Palier horizontal"
+        }
+    },
+    "sollicitations": {
+        "M_Ed": 1194000000.0,
+        "M_ser": 0.0,
+        "moment_positif": true
+    },
+    "ferraillage": {
+        "lits_tendus": [
+            {
+                "numero": 1,
+                "nombre_barres": 5,
+                "diametre_mm": 25.0,
+                "est_comprime": false,
+                "type_lit": "tendu",
+                "espacement_precedent_cm": 5.0,
+                "distance_fibre_tendue_cm": 5.0,
+                "auto_first": false,
+                "label": ""
+            },
+            {
+                "numero": 2,
+                "nombre_barres": 5,
+                "diametre_mm": 25.0,
+                "est_comprime": false,
+                "type_lit": "tendu",
+                "espacement_precedent_cm": 3.0,
+                "distance_fibre_tendue_cm": 8.0,
+                "auto_first": false,
+                "label": ""
+            },
+            {
+                "numero": 3,
+                "nombre_barres": 5,
+                "diametre_mm": 25.0,
+                "est_comprime": false,
+                "type_lit": "tendu",
+                "espacement_precedent_cm": 3.0,
+                "distance_fibre_tendue_cm": 11.0,
+                "auto_first": false,
+                "label": ""
+            },
+            {
+                "numero": 4,
+                "nombre_barres": 5,
+                "diametre_mm": 25.0,
+                "est_comprime": false,
+                "type_lit": "tendu",
+                "espacement_precedent_cm": 5.0,
+                "distance_fibre_tendue_cm": 16.0,
+                "auto_first": false,
+                "label": ""
+            }
+        ],
+        "lits_comprimes": []
+    },
+    "environnement": {
+        "classe_exposition": "XC2",
+        "maitrise_fissuration": true,
+        "wmax_impose": null,
+        "calcul_direct_fissuration": false
+    }
+}
